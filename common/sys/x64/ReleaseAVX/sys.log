@@ -1,0 +1,9 @@
+﻿Build started 30.10.2014 17:32:08.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\common\sys\sys.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         sys.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\sys.lib
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\common\sys\sys.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.03

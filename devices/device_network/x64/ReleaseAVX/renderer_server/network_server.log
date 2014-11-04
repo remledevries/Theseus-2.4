@@ -1,0 +1,17 @@
+﻿Build started 30.10.2014 17:32:08.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_network\network_server.vcxproj" on node 4 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer_server.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer_server.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer_server.lib" /MACHINE:X64 x64\ReleaseAVX\renderer_server\network_server.obj
+         x64\ReleaseAVX\renderer_server\network_server_main.obj
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\sys.lib"
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device.lib"
+     1>device.lib(xml_parser.obj) : error LNK2001: unresolved external symbol "public: __cdecl embree::TokenStream::TokenStream(class embree::Ref<class embree::Stream<int> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > const &)" (??0TokenStream@embree@@QEAA@AEBV?$Ref@V?$Stream@H@embree@@@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@@Z)
+     1>device.lib(xml_parser.obj) : error LNK2001: unresolved external symbol "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const embree::TokenStream::alpha" (?alpha@TokenStream@embree@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B)
+     1>device.lib(xml_parser.obj) : error LNK2001: unresolved external symbol "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const embree::TokenStream::ALPHA" (?ALPHA@TokenStream@embree@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B)
+     1>device.lib(xml_parser.obj) : error LNK2001: unresolved external symbol "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const embree::TokenStream::separators" (?separators@TokenStream@embree@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B)
+     1>F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer_server.exe : fatal error LNK1120: 4 unresolved externals
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_network\network_server.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.43

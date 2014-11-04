@@ -1,0 +1,15 @@
+﻿Build started 26.10.2014 17:45:21.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_network\network_device.vcxproj" on node 4 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.lib" /MACHINE:X64 /DLL x64\ReleaseAVX\network_device.obj
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\image.lib"
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\sys.lib"
+            Creating library F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.lib and object F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.exp
+         Generating code
+         Finished generating code
+         network_device.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_network.dll
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_network\network_device.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.27

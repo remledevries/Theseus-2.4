@@ -1,0 +1,22 @@
+﻿Build started 30.10.2014 17:32:08.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\devices\renderer\renderer.vcxproj" on node 3 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"F:\Embree Renderer\embree-renderer-2.3\/common/freeglut/x64" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer.lib" /MACHINE:X64 x64\ReleaseAVX\glutdisplay.obj
+         x64\ReleaseAVX\regression.obj
+         x64\ReleaseAVX\renderer.obj
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\image.lib"
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\lexers.lib"
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\sys.lib"
+         "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device.lib"
+         Generating code
+         Finished generating code
+         renderer.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\renderer.exe
+       PostBuildEvent:
+         copy "F:\Embree Renderer\embree-renderer-2.3\\common\freeglut\x64\freeglut.dll" "F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\"
+         :VCEnd
+                 1 Datei(en) kopiert.
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\devices\renderer\renderer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.27

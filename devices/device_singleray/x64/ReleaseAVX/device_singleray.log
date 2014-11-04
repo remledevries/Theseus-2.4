@@ -1,0 +1,9 @@
+﻿Build started 30.10.2014 17:32:08.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_singleray\device_singleray.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         device_singleray.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\device_singleray.dll
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\devices\device_singleray\device_singleray.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.19

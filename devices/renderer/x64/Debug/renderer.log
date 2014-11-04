@@ -1,0 +1,14 @@
+﻿Build started 03.11.2014 19:00:24.
+     1>Project "F:\Embree Renderer\Theseus-2.4\devices\renderer\renderer.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\Embree Renderer\Theseus-2.4\devices\renderer\\" /I"F:\Embree Renderer\Theseus-2.4\\" /I"F:\Embree Renderer\Theseus-2.4\/common" /I"F:\Embree Renderer\Theseus-2.4\/devices" /I"F:\Embree Renderer\Theseus-2.4\/common/freeglut/x64" /ZI /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt renderer.cpp
+     1>cl : Command line warning D9038: /ZI is not supported on this platform; enabling /Zi instead
+     1>cl : Command line warning D9007: '/Gm' requires '/Zi'; option ignored
+         renderer.cpp
+     1>renderer.cpp(139): error C2039: 'Set_Licht' : is not a member of 'embree::Device'
+                 F:\Embree Renderer\Theseus-2.4\/devices\device/device.h(50) : see declaration of 'embree::Device'
+     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\devices\renderer\renderer.vcxproj" (ClCompile target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.45

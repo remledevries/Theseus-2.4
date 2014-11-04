@@ -1,0 +1,10 @@
+﻿Build started 30.10.2014 17:43:32.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\devices\device\device.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\embree-2.3.3/include" /I"F:\Embree Renderer\embree-renderer-2.3\devices\device\\" /I"F:\Embree Renderer\embree-renderer-2.3\\" /I"F:\Embree Renderer\embree-renderer-2.3\/common" /I"F:\Embree Renderer\embree-renderer-2.3\/devices" /Zi /nologo /W3 /WX- /Ox /Oi /D WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D INTEL_SUITE_VERSION=PE120_196 /Gm- /EHsc /MD /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /Fo"x64\ReleaseAVX\\" /Fd"x64\ReleaseAVX\vc120.pdb" /Gd /TP /errorReport:prompt loaders\xml_parser.cpp
+         xml_parser.cpp
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\devices\device\device.vcxproj" (ClCompile target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46

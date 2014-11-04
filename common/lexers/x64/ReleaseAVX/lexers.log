@@ -1,0 +1,15 @@
+﻿Build started 26.10.2014 14:19:31.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\common\lexers\lexers.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\Embree Renderer\embree-renderer-2.3\common\lexers\\" /I"F:\Embree Renderer\embree-renderer-2.3\\" /I"F:\Embree Renderer\embree-renderer-2.3\/common" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\ReleaseAVX\\" /Fd"x64\ReleaseAVX\vc120.pdb" /Gd /TP /errorReport:prompt stringstream.cpp tokenstream.cpp
+         stringstream.cpp
+         tokenstream.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\lexers.lib" /NOLOGO /MACHINE:X64 /LTCG x64\ReleaseAVX\stringstream.obj
+         x64\ReleaseAVX\tokenstream.obj
+         lexers.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\lexers.lib
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\common\lexers\lexers.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.90

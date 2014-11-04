@@ -1,0 +1,20 @@
+﻿Build started 26.10.2014 17:45:20.
+     1>Project "F:\Embree Renderer\embree-renderer-2.3\common\image\image.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\Embree Renderer\embree-renderer-2.3\common\image\\" /I"F:\Embree Renderer\embree-renderer-2.3\\" /I"F:\Embree Renderer\embree-renderer-2.3\/common" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\ReleaseAVX\\" /Fd"x64\ReleaseAVX\vc120.pdb" /Gd /TP /errorReport:prompt image_wrapper.cpp
+         image_wrapper.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\image.lib" FreeImage64.lib zlibstat_64.lib /LIBPATH:"F:\Embree Renderer\embree-renderer-2.3\FreeImage\x64" /LIBPATH:"F:\Embree Renderer\embree-renderer-2.3\zlib\x64" /NOLOGO /MACHINE:X64 /LTCG x64\ReleaseAVX\exr.obj
+         x64\ReleaseAVX\image_wrapper.obj
+         x64\ReleaseAVX\image.obj
+         x64\ReleaseAVX\jpeg.obj
+         x64\ReleaseAVX\magick.obj
+         x64\ReleaseAVX\pfm.obj
+         x64\ReleaseAVX\ppm.obj
+         x64\ReleaseAVX\tga.obj
+         image.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\image.lib
+     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\common\image\image.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.26
