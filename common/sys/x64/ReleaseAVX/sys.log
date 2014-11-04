@@ -1,8 +1,8 @@
-﻿Build started 30.10.2014 17:32:08.
-     1>Project "F:\Embree Renderer\embree-renderer-2.3\common\sys\sys.vcxproj" on node 2 (Build target(s)).
+﻿Build started 04.11.2014 16:20:27.
+     1>Project "F:\Embree Renderer\Theseus-2.4\common\sys\sys.vcxproj" on node 2 (Build target(s)).
      1>Lib:
-         sys.vcxproj -> F:\Embree Renderer\embree-renderer-2.3\x64\ReleaseAVX\sys.lib
-     1>Done Building Project "F:\Embree Renderer\embree-renderer-2.3\common\sys\sys.vcxproj" (Build target(s)).
+         sys.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\sys.lib
+     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\common\sys\sys.vcxproj" (Build target(s)).
 
 Build succeeded.
 

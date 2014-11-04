@@ -75,6 +75,46 @@ namespace embree
         prims[slot] = new Primitive(shape,light,prim->getMaterialInstance(),prim->illumMask,prim->shadowMask);
       }
       
+
+	  //----------------------------------------------------------
+	  // Licht mit der übergebenen Nummer , setzen 
+	  // Neu : ELmer 11.2014
+	  //----------------------------------------------------------
+	  void Set_Licht(int Licht_Nummer, const float* transform)
+	  {
+		  std::vector<  Ref<Primitive>  > Light_prims;
+
+		  AffineSpace3f  space = copyFromArray(transform);
+
+		  //---------------------------------
+		  // Lichter finden
+		  //---------------------------------
+		  int g = prims.size();
+
+		  for (int i = 0; i < g; i++)
+		  {
+			  Ref<Primitive> prim = prims[i];
+
+			  if (prim->light)
+				  Light_prims.push_back(prim);
+		  }
+
+		  //--------------------------------------------------------
+		  // Licht Werte setzen, im Moment nur Orientierung im Raum
+		  //---------------------------------------------------------
+		  if (Licht_Nummer < Light_prims.size())
+		  {
+			  Ref<Primitive> Licht_Prim = Light_prims.at(Licht_Nummer);
+
+			  Ref<Light>    Licht_Test = Licht_Prim->light->transform(space, -1, -1);
+
+			  Licht_Prim->light = Licht_Test;
+		  }
+
+
+	  }
+
+
       void create() 
       {
         RTCScene scene = rtcNewScene(RTC_SCENE_STATIC,RTC_INTERSECT1);

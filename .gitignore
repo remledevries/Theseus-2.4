@@ -21,6 +21,12 @@
 *.out
 *.app
 
+# Visual stdio
+*.log
+*.pdb
+*.tlog
+*.idb
+
 # =========================
 # Operating System Files
 # =========================

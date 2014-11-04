@@ -135,6 +135,20 @@ namespace embree
 			AffineSpace3f rotate = AffineSpace3f::rotate(UpVec, 0.1f);
 
 			Set_Scene_Light(0, rotate);
+			Set_Scene_Light(1, rotate);
+
+			break;
+		}
+		case 'u':
+		{
+			//------------------------------------------------------------------
+			// A. Licht bekommen und den Slot wo das Licht im Prim Vektor sitzt 
+			//------------------------------------------------------------------
+			Vector3f      UpVec(0.0f, 1.0f, 0.0f);
+			AffineSpace3f rotate = AffineSpace3f::rotate(UpVec, -0.1f);
+
+			Set_Scene_Light(0, rotate);
+			Set_Scene_Light(1, rotate);
 			break;
 		}
 		case '\033': case 'q': case 'Q':
@@ -454,10 +468,8 @@ namespace embree
   void Bild_Speichern()
   {
 	  void* ptr = g_device->rtMapFrameBuffer(g_frameBuffer);
-	  //Ref<Image3f> image = new Image3f(g_width, g_height, (Col3f*)ptr);
 	  
 	  Ref<Image4c> image = new Image4c(g_width, g_height, (Col4c*)ptr);  // Änderung Elmer 2013
-
 	  storeImage( image.cast<Image>(), "VRenderer.jpg" );
 
 	  g_device->rtUnmapFrameBuffer(g_frameBuffer);

@@ -234,6 +234,12 @@ namespace embree
     /*! Decreases the reference counter of the handle. If zero is reached 
         the handle is destroyed, but not necessarily the referenced object. */
     virtual void rtDecRef(RTHandle handle) = 0;
+
+	//----------------------------------
+	// LICHT - FUNKTION
+	//----------------------------------
+	virtual void Set_Licht(RTScene scene, int Licht_Nummer, const float* transform) = 0;
+
     
     /*******************************************************************
                             setting of parameters

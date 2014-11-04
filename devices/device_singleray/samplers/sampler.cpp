@@ -58,6 +58,11 @@ namespace embree
   int SamplerFactory::requestLightSample(int baseSample, const Ref<Light>& light)
   {
     numLightSamples++;
+
+	//---------------- EINGEFÜGT VON ELMER --------
+	lights.clear();
+	//---------------- EINGEFÜGT VON ELMER --------
+
     lights.push_back(light);
     lightBaseSamples.push_back(baseSample);
     return numLightSamples-1;

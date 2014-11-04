@@ -60,6 +60,13 @@ namespace embree
     void rtSwapBuffers(RTFrameBuffer frameBuffer);
     void rtIncRef(RTHandle handle);
     void rtDecRef(RTHandle handle);
+
+	//-------------------------------------------
+	// LICHT - FUNKTION
+	// für diesen Device nicht implementiert
+	//-------------------------------------------
+	void Set_Licht(RTScene scene, int Licht_Nummer, const float* transform);
+
     
     /*******************************************************************
                             setting of parameters

@@ -47,7 +47,8 @@ namespace embree
       }
       
       virtual void setPrimitive(size_t slot, Ref<PrimitiveHandle> prim) = 0;
-      
+	  virtual void Set_Licht(int Licht_Nummer, const float* transform)  = 0;
+
     public:
       std::string accelTy;
       std::string builderTy;
