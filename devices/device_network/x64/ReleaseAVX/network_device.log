@@ -1,9 +1,0 @@
-﻿Build started 04.11.2014 12:29:48.
-     1>Project "F:\Embree Renderer\Theseus-2.4\devices\device_network\network_device.vcxproj" on node 3 (Build target(s)).
-     1>Link:
-         network_device.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_network.dll
-     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\devices\device_network\network_device.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.34

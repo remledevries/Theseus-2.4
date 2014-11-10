@@ -1,9 +1,0 @@
-﻿Build started 04.11.2014 12:29:48.
-     1>Project "F:\Embree Renderer\Theseus-2.4\common\lexers\lexers.vcxproj" on node 3 (Build target(s)).
-     1>Lib:
-         lexers.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\lexers.lib
-     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\common\lexers\lexers.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.03
