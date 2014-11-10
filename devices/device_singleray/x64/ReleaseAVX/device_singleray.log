@@ -1,9 +1,29 @@
-﻿Build started 04.11.2014 16:20:27.
+﻿Build started 08.11.2014 11:16:34.
      1>Project "F:\Embree Renderer\Theseus-2.4\devices\device_singleray\device_singleray.vcxproj" on node 3 (Build target(s)).
-     1>Link:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\Embree Renderer\Theseus-2.4\devices\device_singleray\\" /I"F:\Embree Renderer\Theseus-2.4\\" /I"F:\Embree Renderer\Theseus-2.4\/common" /I"F:\Embree Renderer\Theseus-2.4\/devices" /I"F:\embree-2.3.3/include" /Zi /nologo /W3 /WX- /Ox /Oi /D WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D INTEL_SUITE_VERSION=PE120_196 /D _WINDLL /Gm- /EHsc /MD /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /Fo"x64\ReleaseAVX\\" /Fd"x64\ReleaseAVX\vc120.pdb" /Gd /TP /errorReport:prompt api\singleray_device.cpp
+         singleray_device.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.dll" /INCREMENTAL:NO /NOLOGO "F:\embree-2.3.3\x64\ReleaseAVX\embree.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.pdb" /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.lib" /MACHINE:X64 /DLL x64\ReleaseAVX\singleray_device.obj
+         x64\ReleaseAVX\filter.obj
+         x64\ReleaseAVX\pathtraceintegrator.obj
+         x64\ReleaseAVX\hdrilight.obj
+         x64\ReleaseAVX\debugrenderer.obj
+         x64\ReleaseAVX\integratorrenderer.obj
+         x64\ReleaseAVX\progress.obj
+         x64\ReleaseAVX\distribution1d.obj
+         x64\ReleaseAVX\distribution2d.obj
+         x64\ReleaseAVX\sampler.obj
+         x64\ReleaseAVX\trianglemesh_full.obj
+         x64\ReleaseAVX\trianglemesh_normals.obj
+         "F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\image.lib"
+         "F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\sys.lib"
+            Creating library F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.lib and object F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.exp
+         Generating code
+         Finished generating code
          device_singleray.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\device_singleray.dll
      1>Done Building Project "F:\Embree Renderer\Theseus-2.4\devices\device_singleray\device_singleray.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.09
+Time Elapsed 00:00:04.81

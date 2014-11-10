@@ -64,7 +64,7 @@ namespace embree
 	// LICHT - FUNKTION
 	// für diesen Device nicht implementiert
 	//-------------------------------------------
-	void Set_Licht(RTScene scene, int Licht_Nummer, const float* transform) { ; } 
+	void Set_Licht(RTScene scene, int Licht_Nummer, const float* transform);
 
     
     /*******************************************************************

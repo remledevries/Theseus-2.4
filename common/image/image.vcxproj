@@ -300,6 +300,10 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
+    <Lib>
+      <AdditionalDependencies>FreeImage64.lib;zlibstat_64.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)FreeImage\$(PlatformName);"$(SolutionDir)zlib\$(PlatformName)";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="exr.cpp" />

@@ -108,10 +108,17 @@ namespace embree
   Handle<Device::RTScene> createScene()
   {
     Handle<Device::RTScene> scene = g_device->rtNewScene(g_scene.c_str());
+
     g_device->rtSetString(scene,"accel",g_accel.c_str());
     g_device->rtSetString(scene,"builder",g_builder.c_str());
     g_device->rtSetString(scene,"traverser",g_traverser.c_str());
-    for (size_t i=0; i<g_prims.size(); i++) g_device->rtSetPrimitive(scene,i,g_prims[i]);
+
+
+	size_t Anzahl_Prims = g_prims.size();
+
+	for (size_t i = 0; i< Anzahl_Prims; i++)
+		 g_device->rtSetPrimitive(scene,i,g_prims[i]);
+
     g_device->rtCommit(scene);
     return scene;
   }

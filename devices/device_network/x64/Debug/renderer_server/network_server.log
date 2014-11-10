@@ -1,4 +1,4 @@
-﻿Build started 04.11.2014 16:18:52.
+﻿Build started 08.11.2014 11:49:26.
      1>Project "F:\Embree Renderer\Theseus-2.4\devices\device_network\network_server.vcxproj" on node 2 (Build target(s)).
      1>Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Embree Renderer\Theseus-2.4\x64\Debug\renderer_server.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Embree Renderer\Theseus-2.4\x64\Debug\renderer_server.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Embree Renderer\Theseus-2.4\x64\Debug\renderer_server.lib" /MACHINE:X64 x64\Debug\renderer_server\network_server.obj
@@ -14,4 +14,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:00.23
+Time Elapsed 00:00:00.44

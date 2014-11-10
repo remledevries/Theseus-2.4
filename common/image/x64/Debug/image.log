@@ -1,4 +1,4 @@
-﻿Build started 04.11.2014 12:17:55.
+﻿Build started 08.11.2014 11:32:30.
      1>Project "F:\Embree Renderer\Theseus-2.4\common\image\image.vcxproj" on node 2 (Build target(s)).
      1>Lib:
          image.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\Debug\image.lib
@@ -6,4 +6,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.32
+Time Elapsed 00:00:00.04

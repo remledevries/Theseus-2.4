@@ -1,4 +1,4 @@
-﻿Build started 04.11.2014 16:20:27.
+﻿Build started 08.11.2014 11:16:34.
      1>Project "F:\Embree Renderer\Theseus-2.4\common\sys\sys.vcxproj" on node 2 (Build target(s)).
      1>Lib:
          sys.vcxproj -> F:\Embree Renderer\Theseus-2.4\x64\ReleaseAVX\sys.lib
@@ -6,4 +6,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.03
+Time Elapsed 00:00:00.06

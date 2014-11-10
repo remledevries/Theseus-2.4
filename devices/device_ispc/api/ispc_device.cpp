@@ -323,19 +323,24 @@ namespace embree
     return (Device::RTPrimitive) new PrimitiveHandle(prim->shape,prim->light,prim->material,space * prim->transform);
   }
 
+
+
   class SceneHandle : public _RTHandle 
   {
+
     ALIGNED_CLASS;
+
   public:
 
-    SceneHandle () 
-      : instance(ispc::Scene__new()) {}
+    SceneHandle () : instance(ispc::Scene__new()) {}
 
-    void set(const std::string& property, const Variant& data) {
+    void set(const std::string& property, const Variant& data) 
+	{
     }
 
-    void set(size_t slot, PrimitiveHandle* prim)
+    void set( size_t slot, PrimitiveHandle* prim )
     {
+
       if (prim == NULL)
         ispc::Scene__set(instance.ptr,slot,NULL);
 
@@ -348,7 +353,7 @@ namespace embree
                                                (ispc::vec3f&)prim->transform.p);
 
         ISPCRef inst = ispc::Instance__new(shape.ptr,prim->material.ptr,NULL);
-        ispc::Scene__set(instance.ptr,slot,inst.ptr);
+                       ispc::Scene__set(instance.ptr,slot,inst.ptr);
       }
       
       else if (prim->light)
@@ -360,13 +365,41 @@ namespace embree
                                                (ispc::vec3f&)prim->transform.p);
         
         ISPCRef shape = ispc::Light__shape(light.ptr);
-        ISPCRef inst = ispc::Instance__new(shape.ptr,prim->material.ptr,light.ptr);
+        ISPCRef inst  = ispc::Instance__new(shape.ptr,prim->material.ptr,light.ptr);
         ispc::Scene__set(instance.ptr,slot,inst.ptr);
       }
       else throw std::runtime_error("invalid primitive");
     }
 
-    void create() {
+	//----------------------------------------------------------
+	// Licht mit der übergebenen Nummer , setzen 
+	// Neu : ELmer 11.2014
+	//----------------------------------------------------------
+	void Set_Licht( int Licht_Nummer, const float* transform )
+	{
+		std::vector<  Ref<Primitive>  > Light_prims;
+
+		AffineSpace3f  space = copyFromArray(transform);
+
+		//---------------------------------
+		// Lichter finden
+		//---------------------------------
+		int g = prims.size();
+
+		for (int i = 0; i < g; i++)
+		{
+			Ref<Primitive> prim = prims[i];
+
+			if (prim->light)
+				Light_prims.push_back(prim);
+		}
+
+		int i = 0;
+	}
+
+
+    void create() 
+	{
       ispc::Scene__commit(instance.ptr);
     }
 
@@ -378,14 +411,22 @@ namespace embree
     if (!strcmp(type,"default" )) return (Device::RTScene) new SceneHandle;
     else throw std::runtime_error("unknown scene type: "+std::string(type));
   }
-     
+   
+
   void ISPCDevice::rtSetPrimitive(RTScene hscene, size_t slot, RTPrimitive hprim) 
   {
     SceneHandle* scene = castHandle<SceneHandle>(hscene,"scene");
-    if (hprim == NULL) { scene->set(slot,NULL); return; }
+
+    if (hprim == NULL)
+	{ 
+		scene->set(slot,NULL); 
+	    return;
+	}
+
     PrimitiveHandle* prim = dynamic_cast<PrimitiveHandle*>((_RTHandle*)hprim);
     scene->set(slot,prim);
-  }
+    }
+
 
   Device::RTToneMapper ISPCDevice::rtNewToneMapper(const char* type)
   {
@@ -634,4 +675,39 @@ namespace embree
     px = p.x; py = p.y; pz = p.z;
     return hit;
   }
+
+  /*******************************************************************
+  Licht Einstellungen
+  *******************************************************************/
+
+  // -------------------------------------------------------------------------------------
+  //
+  //  INFO : Elmer
+  //
+  //  Adds or deletes a primitive to/from the scene. Primitives are
+  //  deleted by adding NULL to a primitive slot. 
+  //
+  // ------------------------------------------------------------------------------------
+  void ISPCDevice::Set_Licht( RTScene scene, int Licht_Nummer, const float* transform )
+  {
+
+	  SceneHandle* hscene = castHandle<SceneHandle>(scene, "scene");
+
+	  hscene->Set_Licht(Licht_Nummer, transform);
+		  
+	  int i = 0;
+
+	  //if (hprim == NULL)
+	  //{
+		 // scene->set(slot, NULL);
+	  //    return;
+	  //}
+
+	  //PrimitiveHandle* prim = dynamic_cast<PrimitiveHandle*>((_RTHandle*)hprim);
+	  //scene->set(slot, prim);
+
+	  //Ref<BackendScene::Handle >  scene_h = castHandle<BackendScene::Handle>(scene, "scene");
+	  //scene_h->Set_Licht(Licht_Nummer, transform);
+  }
+
 }

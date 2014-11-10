@@ -1,14 +1,13 @@
-﻿Build started 04.11.2014 12:21:51.
-     1>Project "F:\Embree Renderer\Theseus-2.4\devices\device\device.vcxproj" on node 3 (Build target(s)).
+﻿Build started 05.11.2014 15:55:36.
+     1>Project "F:\Embree Renderer\Theseus-2.4\devices\device\device.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\embree-2.3.3/include" /I"F:\Embree Renderer\Theseus-2.4\devices\device\\" /I"F:\Embree Renderer\Theseus-2.4\\" /I"F:\Embree Renderer\Theseus-2.4\/common" /I"F:\Embree Renderer\Theseus-2.4\/devices" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:fast /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt device.cpp handle.cpp loaders\loaders.cpp loaders\obj_loader.cpp loaders\xml_loader.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"F:\embree-2.3.3/include" /I"F:\Embree Renderer\Theseus-2.4\devices\device\\" /I"F:\Embree Renderer\Theseus-2.4\\" /I"F:\Embree Renderer\Theseus-2.4\/common" /I"F:\Embree Renderer\Theseus-2.4\/devices" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:fast /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt loaders\loaders.cpp loaders\obj_loader.cpp loaders\xml_loader.cpp loaders\xml_parser.cpp device.cpp handle.cpp
+         handle.cpp
          device.cpp
-         Generating Code...
-         Compiling...
+         xml_parser.cpp
          xml_loader.cpp
          obj_loader.cpp
          loaders.cpp
-         handle.cpp
          Generating Code...
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"F:\Embree Renderer\Theseus-2.4\x64\Debug\device.lib" /NOLOGO /MACHINE:X64 x64\Debug\loaders.obj
@@ -22,8 +21,8 @@
          copy "F:\embree-2.3.3\x64\Debug\embree.dll" "F:\Embree Renderer\Theseus-2.4\x64\Debug\"
          :VCEnd
                  1 Datei(en) kopiert.
-     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\devices\device\device.vcxproj" (Build target(s)).
+     1>Done Building Project "F:\Embree Renderer\Theseus-2.4\devices\device\device.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.23
+Time Elapsed 00:00:04.07

@@ -36,9 +36,9 @@ void Scene__Destructor(uniform RefCount* uniform _this)
   RefCount__Destructor(_this);
 }
 
-typedef uniform Light* UniformLightPtr;
+typedef uniform Light*            UniformLightPtr;
 typedef uniform EnvironmentLight* UniformEnvLightPtr;
-typedef uniform Instance* UniformInstancePtr;
+typedef uniform Instance*         UniformInstancePtr;
 
 void Scene__Constructor(uniform Scene* uniform this)
 {
@@ -77,17 +77,22 @@ void occlusionFilter(void* uniform ptr, RTCRay& ray) {
   ray.id0 = RTC_INVALID_GEOMETRY_ID;
 }
 
+
 export void Scene__set(void* uniform scene_in, uniform int slot, void* uniform instance_in)
 {
   uniform Scene*    uniform scene    = (uniform Scene*    uniform) scene_in;
   uniform Instance* uniform instance = (uniform Instance* uniform) instance_in;
   
-  if (scene->instances[slot]) {
-    rtcDeleteGeometry(scene->handle,scene->id2handle[slot]);
-    RefCount__DecRef(&scene->instances[slot]->base);
+  if (scene->instances[slot])
+  {
+      rtcDeleteGeometry(scene->handle,scene->id2handle[slot]);
+      RefCount__DecRef(&scene->instances[slot]->base);
   }
+
   scene->instances[slot] = instance;
-  if (instance) {
+
+  if (instance)
+   {
     RefCount__IncRef(&instance->base);
     if (instance->shape) {
       uniform uint handle = instance->shape->add(scene->handle,instance->shape);
@@ -100,17 +105,26 @@ export void Scene__set(void* uniform scene_in, uniform int slot, void* uniform i
   scene->numInstances = max(scene->numInstances,(uniform uint)(slot+1));
 }
 
+
 export void Scene__commit(void* uniform scene_in)
 {
+
   uniform Scene* uniform scene = (uniform Scene* uniform) scene_in;
   scene->numAllLights = 0;
   scene->numEnvLights = 0;
-  for (uniform size_t i=0; i<scene->numInstances; i++) {
+
+  for (uniform size_t i=0; i<scene->numInstances; i++) 
+  {
     uniform Instance* uniform instance = scene->instances[i];
+
     if (instance == NULL) continue;
-    if (instance->light) {
+
+    if (instance->light) 
+	{
       scene->allLights[scene->numAllLights++] = instance->light;
-      if (instance->light->type & ENV_LIGHT) {
+
+      if (instance->light->type & ENV_LIGHT) 
+	  {
         scene->envLights[scene->numEnvLights++] = (uniform EnvironmentLight* uniform) instance->light;
       }
     }
